@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>project_3_slider</title>
+  <link rel="stylesheet" type="text/css" href="./project_3.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <section class="desktop-1">
+      <div class="window-container">
+        <div class="completed">
+          <h2 class="title2">
+            Completed<br>projects<span class="hide" >&#8196;&#8196;&#8196;&#8196; ⎯⎯⎯⎯</span> 
+          </h2>
+          <p class="completed-content">
+            Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families
+          </p>
+          <div class="feuilleton">
+            <div class="feuil1">
+              <h3 class="title3">
+                City:
+              </h3>
+            <p class="feuil-text" id="place">Rostov-on-Don <br>LCD admiral</p>
+            </div>
+            <div class="feuil1">
+              <h3 class="title3">
+                apartment area:
+              </h3>
+              <p class="feuil-text" id="area">81 m2</p>
+            </div>
+            <div class="feuil1">
+              <h3 class="title3">
+                Repair time:
+              </h3>
+              <p class="feuil-text" id="time">3.5 months</p>
+            </div>
+            <div class="feuil1">
+              <h3 class="title3">
+                Repair Cost:
+              </h3>
+              <p class="feuil-text" id="cost">Upon request</p>   
+            </div>
+          </div>
+          <nav>
+            <ul class="vector-nav"> 
+              <li class="vector-nav-item"><div class="vector-nav-link vec-l" onclick="changeImage(false);">
+                <img src="./images/Group.svg" alt="left vector">
+              </div></li>
+
+              <li class="vector-nav-item"><div class="vector-nav-link circ" onclick="selectImage(0);">
+                <img src="./images/Rectangle 7.3.svg" alt="black circle">
+                <img class="circle-white active" id="circle-0" src="./images/Rectangle 7.4.svg" alt="white circle">
+              </div></li>
+
+              <li class="vector-nav-item"><div class="vector-nav-link circ" onclick="selectImage(1);">
+                <img src="./images/Rectangle 7.3.svg" alt="black circle">
+                <img class="circle-white" id="circle-1" src="./images/Rectangle 7.4.svg" alt="white circle">
+              </div></li>
+
+              <li class="vector-nav-item"><div class="vector-nav-link circ" onclick="selectImage(2);">
+                <img src="./images/Rectangle 7.3.svg" alt="black circle">
+                <img class="circle-white" id="circle-2" src="./images/Rectangle 7.4.svg" alt="white circle">
+              </div></li>
+
+              <li class="vector-nav-item"><div class="vector-nav-link vec-r" href="" onclick="changeImage(true);">
+                <img src="./images/Group_r.svg" alt="right vector">
+              </div></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <nav>
+            <ul class="city-nav hide">
+              <li class="city-nav-item"><div id="city-nav-0" class="city-nav-link city-nav-link-selected" onclick="selectImage(0);">Rostov-on-Don, Admiral</div></li>
+              <li class="city-nav-item"><div id="city-nav-1" class="city-nav-link" onclick="selectImage(1);">Sochi Thieves</div></li>
+              <li class="city-nav-item"><div id="city-nav-2" class="city-nav-link" onclick="selectImage(2);">Rostov-on-Don Patriotic</div></li>
+            </ul>
+          </nav>
+          <div class="imagine">
+            <img class="photo1 active" id="slide1" src="./images/image 2.1.png">
+            <img class="photo2" id="slide2" src="./images/image 2.2.png">
+            <img class="photo3" id="slide3" src="./images/image 2.3.png">
+          </div>  
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="footer"> 
+  </footer>
+  </body>
+</html>
+
+
